@@ -3,16 +3,18 @@ import 'package:flutter/material.dart';
 void main() => runApp(const ArtisanApp());
 
 class AppColors {
-  static const primary = Color(0xFF5B3A8E);
-  static const deepPurple = Color(0xFF3D285F);
-  static const lavender = Color(0xFFF1ECF7);
-  static const cream = Color(0xFFFAF7F2);
-  static const gold = Color(0xFFC99A3D);
-  static const goldLight = Color(0xFFF5EBD5);
-  static const text = Color(0xFF29252D);
-  static const muted = Color(0xFF746D78);
-  static const border = Color(0xFFE7E0EA);
-  static const green = Color(0xFF3C8061);
+  // Burgundy + Beige theme
+  static const primary = Color(0xFF7A1F3D); // Burgundy
+  static const deepPurple = Color(0xFF4A1025); // Deep Burgundy
+  static const lavender = Color(0xFFF3E6D3); // Beige
+  static const cream = Color(0xFFFFF9F2); // Warm Cream
+  static const gold = Color(0xFFC8A45D); // Muted Gold
+  static const goldLight = Color(0xFFEAD9B8); // Light Gold
+  static const maroon = Color(0xFF7A1F3D); // Burgundy
+  static const text = Color(0xFF2D1B20); // Dark Text
+  static const muted = Color(0xFF7B6870); // Muted Text
+  static const border = Color(0xFFE3D5D8); // Soft Border
+  static const green = Color(0xFF5F7658); // Muted Green
 }
 
 class ArtisanApp extends StatelessWidget {
@@ -520,7 +522,7 @@ class RoleCard extends StatelessWidget {
                 color: AppColors.lavender,
                 borderRadius: BorderRadius.circular(17),
               ),
-              child: Icon(icon, color: AppColors.primary, size: 28),
+              child: Icon(icon, color: AppColors.maroon, size: 28),
             ),
             const SizedBox(width: 16),
             Expanded(
@@ -1252,7 +1254,7 @@ class ProcessingStep extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(icon, size: 19, color: AppColors.gold),
+          Icon(icon, size: 19, color: AppColors.maroon),
           const SizedBox(width: 10),
           Text(text, style: const TextStyle(color: AppColors.muted)),
         ],
@@ -1456,7 +1458,7 @@ class PublishSuccessScreen extends StatelessWidget {
                 child: const Icon(
                   Icons.check_rounded,
                   size: 50,
-                  color: AppColors.gold,
+                  color: AppColors.maroon,
                 ),
               ),
               const SizedBox(height: 25),
@@ -1744,7 +1746,7 @@ class ProductDetailsScreen extends StatelessWidget {
           Text(
             product.category.toUpperCase(),
             style: const TextStyle(
-              color: AppColors.gold,
+              color: AppColors.maroon,
               fontSize: 12,
               fontWeight: FontWeight.w800,
               letterSpacing: 1.2,
