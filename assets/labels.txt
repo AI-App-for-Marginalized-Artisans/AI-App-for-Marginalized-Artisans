@@ -1,0 +1,6 @@
+0 Bags
+1 Baskets
+2 Jewelry
+3 Pottery
+4 Sarees
+5 Wooden Crafts
